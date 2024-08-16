@@ -1,0 +1,440 @@
+2024-08-16 10:58:54 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-08-16 10:58:54 [py.warnings] WARNING: D:\Gaurav\PRACTICE\PYTHON\anime-scraper\.venv\Lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-08-16 10:58:54 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2024-08-16 10:58:54 [scrapy.extensions.telnet] INFO: Telnet Password: 5323336d18443a40
+2024-08-16 10:58:54 [py.warnings] WARNING: D:\Gaurav\PRACTICE\PYTHON\anime-scraper\.venv\Lib\site-packages\scrapy\extensions\feedexport.py:406: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2024-08-16 10:58:54 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2024-08-16 10:58:54 [scrapy.crawler] INFO: Overridden settings:
+{'LOG_FILE': 'data/AnimeScrape.log'}
+2024-08-16 10:58:55 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-08-16 10:58:55 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-08-16 10:58:55 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-08-16 10:58:55 [scrapy.core.engine] INFO: Spider opened
+2024-08-16 10:58:55 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-08-16 10:58:55 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-08-16 10:58:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=.> (referer: None)
+2024-08-16 10:58:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=.>
+{'page_urls': [{'page_urls': 'https://myanimelist.net/anime.php?letter=.&show=0'}, {'page_urls': 'https://myanimelist.net/anime.php?letter=.&show=50'}, {'page_urls': 'https://myanimelist.net/anime.php?letter=.&show=100'}, {'page_urls': 'https://myanimelist.net/anime.php?letter=.&show=150'}, {'page_urls': 'https://myanimelist.net/anime.php?letter=.&show=200'}]}
+2024-08-16 10:58:56 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-08-16 10:58:56 [scrapy.extensions.feedexport] INFO: Stored json feed (1 items) in: data/pages_urls.csv
+2024-08-16 10:58:56 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 310,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 277771,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.260752,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 8, 16, 5, 28, 56, 399022, tzinfo=datetime.timezone.utc),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 2,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2024, 8, 16, 5, 28, 55, 138270, tzinfo=datetime.timezone.utc)}
+2024-08-16 10:58:56 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-08-16 10:59:44 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-08-16 10:59:44 [py.warnings] WARNING: D:\Gaurav\PRACTICE\PYTHON\anime-scraper\.venv\Lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-08-16 10:59:44 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2024-08-16 10:59:44 [scrapy.extensions.telnet] INFO: Telnet Password: 8d7876178737b64a
+2024-08-16 10:59:44 [py.warnings] WARNING: D:\Gaurav\PRACTICE\PYTHON\anime-scraper\.venv\Lib\site-packages\scrapy\extensions\feedexport.py:406: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2024-08-16 10:59:44 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2024-08-16 10:59:44 [scrapy.crawler] INFO: Overridden settings:
+{'LOG_FILE': 'data/AnimeScrape.log'}
+2024-08-16 10:59:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-08-16 10:59:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-08-16 10:59:45 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-08-16 10:59:45 [scrapy.core.engine] INFO: Spider opened
+2024-08-16 10:59:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-08-16 10:59:45 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-08-16 10:59:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=.> (referer: None)
+2024-08-16 10:59:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=.>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=.&show=0', 'https://myanimelist.net/anime.php?letter=.&show=50', 'https://myanimelist.net/anime.php?letter=.&show=100', 'https://myanimelist.net/anime.php?letter=.&show=150', 'https://myanimelist.net/anime.php?letter=.&show=200']}
+2024-08-16 10:59:46 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-08-16 10:59:46 [scrapy.extensions.feedexport] INFO: Stored json feed (1 items) in: data/pages_urls.csv
+2024-08-16 10:59:46 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 310,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 277771,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.340479,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 8, 16, 5, 29, 46, 576172, tzinfo=datetime.timezone.utc),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 2,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2024, 8, 16, 5, 29, 45, 235693, tzinfo=datetime.timezone.utc)}
+2024-08-16 10:59:46 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-08-16 11:00:41 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-08-16 11:00:41 [py.warnings] WARNING: D:\Gaurav\PRACTICE\PYTHON\anime-scraper\.venv\Lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-08-16 11:00:41 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2024-08-16 11:00:41 [scrapy.extensions.telnet] INFO: Telnet Password: 36b0e79862a99646
+2024-08-16 11:00:41 [py.warnings] WARNING: D:\Gaurav\PRACTICE\PYTHON\anime-scraper\.venv\Lib\site-packages\scrapy\extensions\feedexport.py:406: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2024-08-16 11:00:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2024-08-16 11:00:41 [scrapy.crawler] INFO: Overridden settings:
+{'LOG_FILE': 'data/AnimeScrape.log'}
+2024-08-16 11:00:41 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-08-16 11:00:41 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-08-16 11:00:41 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-08-16 11:00:41 [scrapy.core.engine] INFO: Spider opened
+2024-08-16 11:00:41 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-08-16 11:00:41 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-08-16 11:00:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=G> (referer: None)
+2024-08-16 11:00:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=D> (referer: None)
+2024-08-16 11:00:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=F> (referer: None)
+2024-08-16 11:00:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=B> (referer: None)
+2024-08-16 11:00:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=C> (referer: None)
+2024-08-16 11:00:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=G>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=G&show=0', 'https://myanimelist.net/anime.php?letter=G&show=50', 'https://myanimelist.net/anime.php?letter=G&show=100', 'https://myanimelist.net/anime.php?letter=G&show=150', 'https://myanimelist.net/anime.php?letter=G&show=200', 'https://myanimelist.net/anime.php?letter=G&show=250', 'https://myanimelist.net/anime.php?letter=G&show=300', 'https://myanimelist.net/anime.php?letter=G&show=350', 'https://myanimelist.net/anime.php?letter=G&show=400', 'https://myanimelist.net/anime.php?letter=G&show=450', 'https://myanimelist.net/anime.php?letter=G&show=500', 'https://myanimelist.net/anime.php?letter=G&show=550', 'https://myanimelist.net/anime.php?letter=G&show=600', 'https://myanimelist.net/anime.php?letter=G&show=650', 'https://myanimelist.net/anime.php?letter=G&show=700', 'https://myanimelist.net/anime.php?letter=G&show=750', 'https://myanimelist.net/anime.php?letter=G&show=800', 'https://myanimelist.net/anime.php?letter=G&show=850', 'https://myanimelist.net/anime.php?letter=G&show=900', 'https://myanimelist.net/anime.php?letter=G&show=950']}
+2024-08-16 11:00:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=D>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=D&show=0', 'https://myanimelist.net/anime.php?letter=D&show=50', 'https://myanimelist.net/anime.php?letter=D&show=100', 'https://myanimelist.net/anime.php?letter=D&show=150', 'https://myanimelist.net/anime.php?letter=D&show=200', 'https://myanimelist.net/anime.php?letter=D&show=250', 'https://myanimelist.net/anime.php?letter=D&show=300', 'https://myanimelist.net/anime.php?letter=D&show=350', 'https://myanimelist.net/anime.php?letter=D&show=400', 'https://myanimelist.net/anime.php?letter=D&show=450', 'https://myanimelist.net/anime.php?letter=D&show=500', 'https://myanimelist.net/anime.php?letter=D&show=550', 'https://myanimelist.net/anime.php?letter=D&show=600', 'https://myanimelist.net/anime.php?letter=D&show=650', 'https://myanimelist.net/anime.php?letter=D&show=700', 'https://myanimelist.net/anime.php?letter=D&show=750', 'https://myanimelist.net/anime.php?letter=D&show=800', 'https://myanimelist.net/anime.php?letter=D&show=850', 'https://myanimelist.net/anime.php?letter=D&show=900', 'https://myanimelist.net/anime.php?letter=D&show=950']}
+2024-08-16 11:00:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=F>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=F&show=0', 'https://myanimelist.net/anime.php?letter=F&show=50', 'https://myanimelist.net/anime.php?letter=F&show=100', 'https://myanimelist.net/anime.php?letter=F&show=150', 'https://myanimelist.net/anime.php?letter=F&show=200', 'https://myanimelist.net/anime.php?letter=F&show=250', 'https://myanimelist.net/anime.php?letter=F&show=300', 'https://myanimelist.net/anime.php?letter=F&show=350', 'https://myanimelist.net/anime.php?letter=F&show=400', 'https://myanimelist.net/anime.php?letter=F&show=450', 'https://myanimelist.net/anime.php?letter=F&show=500', 'https://myanimelist.net/anime.php?letter=F&show=550', 'https://myanimelist.net/anime.php?letter=F&show=600', 'https://myanimelist.net/anime.php?letter=F&show=650']}
+2024-08-16 11:00:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=B>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=B&show=0', 'https://myanimelist.net/anime.php?letter=B&show=50', 'https://myanimelist.net/anime.php?letter=B&show=100', 'https://myanimelist.net/anime.php?letter=B&show=150', 'https://myanimelist.net/anime.php?letter=B&show=200', 'https://myanimelist.net/anime.php?letter=B&show=250', 'https://myanimelist.net/anime.php?letter=B&show=300', 'https://myanimelist.net/anime.php?letter=B&show=350', 'https://myanimelist.net/anime.php?letter=B&show=400', 'https://myanimelist.net/anime.php?letter=B&show=450', 'https://myanimelist.net/anime.php?letter=B&show=500', 'https://myanimelist.net/anime.php?letter=B&show=550', 'https://myanimelist.net/anime.php?letter=B&show=600', 'https://myanimelist.net/anime.php?letter=B&show=650', 'https://myanimelist.net/anime.php?letter=B&show=700', 'https://myanimelist.net/anime.php?letter=B&show=750', 'https://myanimelist.net/anime.php?letter=B&show=800', 'https://myanimelist.net/anime.php?letter=B&show=850', 'https://myanimelist.net/anime.php?letter=B&show=900', 'https://myanimelist.net/anime.php?letter=B&show=950']}
+2024-08-16 11:00:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=C>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=C&show=0', 'https://myanimelist.net/anime.php?letter=C&show=50', 'https://myanimelist.net/anime.php?letter=C&show=100', 'https://myanimelist.net/anime.php?letter=C&show=150', 'https://myanimelist.net/anime.php?letter=C&show=200', 'https://myanimelist.net/anime.php?letter=C&show=250', 'https://myanimelist.net/anime.php?letter=C&show=300', 'https://myanimelist.net/anime.php?letter=C&show=350', 'https://myanimelist.net/anime.php?letter=C&show=400', 'https://myanimelist.net/anime.php?letter=C&show=450', 'https://myanimelist.net/anime.php?letter=C&show=500', 'https://myanimelist.net/anime.php?letter=C&show=550', 'https://myanimelist.net/anime.php?letter=C&show=600', 'https://myanimelist.net/anime.php?letter=C&show=650', 'https://myanimelist.net/anime.php?letter=C&show=700', 'https://myanimelist.net/anime.php?letter=C&show=750', 'https://myanimelist.net/anime.php?letter=C&show=800', 'https://myanimelist.net/anime.php?letter=C&show=850', 'https://myanimelist.net/anime.php?letter=C&show=900', 'https://myanimelist.net/anime.php?letter=C&show=950']}
+2024-08-16 11:00:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=.> (referer: None)
+2024-08-16 11:00:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=A> (referer: None)
+2024-08-16 11:00:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=.>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=.&show=0', 'https://myanimelist.net/anime.php?letter=.&show=50', 'https://myanimelist.net/anime.php?letter=.&show=100', 'https://myanimelist.net/anime.php?letter=.&show=150', 'https://myanimelist.net/anime.php?letter=.&show=200']}
+2024-08-16 11:00:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=E> (referer: None)
+2024-08-16 11:00:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=A>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=A&show=0', 'https://myanimelist.net/anime.php?letter=A&show=50', 'https://myanimelist.net/anime.php?letter=A&show=100', 'https://myanimelist.net/anime.php?letter=A&show=150', 'https://myanimelist.net/anime.php?letter=A&show=200', 'https://myanimelist.net/anime.php?letter=A&show=250', 'https://myanimelist.net/anime.php?letter=A&show=300', 'https://myanimelist.net/anime.php?letter=A&show=350', 'https://myanimelist.net/anime.php?letter=A&show=400', 'https://myanimelist.net/anime.php?letter=A&show=450', 'https://myanimelist.net/anime.php?letter=A&show=500', 'https://myanimelist.net/anime.php?letter=A&show=550', 'https://myanimelist.net/anime.php?letter=A&show=600', 'https://myanimelist.net/anime.php?letter=A&show=650', 'https://myanimelist.net/anime.php?letter=A&show=700', 'https://myanimelist.net/anime.php?letter=A&show=750', 'https://myanimelist.net/anime.php?letter=A&show=800', 'https://myanimelist.net/anime.php?letter=A&show=850', 'https://myanimelist.net/anime.php?letter=A&show=900', 'https://myanimelist.net/anime.php?letter=A&show=950']}
+2024-08-16 11:00:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=E>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=E&show=0', 'https://myanimelist.net/anime.php?letter=E&show=50', 'https://myanimelist.net/anime.php?letter=E&show=100', 'https://myanimelist.net/anime.php?letter=E&show=150', 'https://myanimelist.net/anime.php?letter=E&show=200', 'https://myanimelist.net/anime.php?letter=E&show=250', 'https://myanimelist.net/anime.php?letter=E&show=300']}
+2024-08-16 11:00:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=H> (referer: None)
+2024-08-16 11:00:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=I> (referer: None)
+2024-08-16 11:00:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=J> (referer: None)
+2024-08-16 11:00:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=L> (referer: None)
+2024-08-16 11:00:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=H>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=H&show=0', 'https://myanimelist.net/anime.php?letter=H&show=50', 'https://myanimelist.net/anime.php?letter=H&show=100', 'https://myanimelist.net/anime.php?letter=H&show=150', 'https://myanimelist.net/anime.php?letter=H&show=200', 'https://myanimelist.net/anime.php?letter=H&show=250', 'https://myanimelist.net/anime.php?letter=H&show=300', 'https://myanimelist.net/anime.php?letter=H&show=350', 'https://myanimelist.net/anime.php?letter=H&show=400', 'https://myanimelist.net/anime.php?letter=H&show=450', 'https://myanimelist.net/anime.php?letter=H&show=500', 'https://myanimelist.net/anime.php?letter=H&show=550', 'https://myanimelist.net/anime.php?letter=H&show=600', 'https://myanimelist.net/anime.php?letter=H&show=650', 'https://myanimelist.net/anime.php?letter=H&show=700', 'https://myanimelist.net/anime.php?letter=H&show=750', 'https://myanimelist.net/anime.php?letter=H&show=800', 'https://myanimelist.net/anime.php?letter=H&show=850', 'https://myanimelist.net/anime.php?letter=H&show=900', 'https://myanimelist.net/anime.php?letter=H&show=950']}
+2024-08-16 11:00:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=I>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=I&show=0', 'https://myanimelist.net/anime.php?letter=I&show=50', 'https://myanimelist.net/anime.php?letter=I&show=100', 'https://myanimelist.net/anime.php?letter=I&show=150', 'https://myanimelist.net/anime.php?letter=I&show=200', 'https://myanimelist.net/anime.php?letter=I&show=250', 'https://myanimelist.net/anime.php?letter=I&show=300', 'https://myanimelist.net/anime.php?letter=I&show=350', 'https://myanimelist.net/anime.php?letter=I&show=400', 'https://myanimelist.net/anime.php?letter=I&show=450', 'https://myanimelist.net/anime.php?letter=I&show=500', 'https://myanimelist.net/anime.php?letter=I&show=550', 'https://myanimelist.net/anime.php?letter=I&show=600']}
+2024-08-16 11:00:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=J>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=J&show=0', 'https://myanimelist.net/anime.php?letter=J&show=50', 'https://myanimelist.net/anime.php?letter=J&show=100', 'https://myanimelist.net/anime.php?letter=J&show=150', 'https://myanimelist.net/anime.php?letter=J&show=200', 'https://myanimelist.net/anime.php?letter=J&show=250', 'https://myanimelist.net/anime.php?letter=J&show=300', 'https://myanimelist.net/anime.php?letter=J&show=350', 'https://myanimelist.net/anime.php?letter=J&show=400', 'https://myanimelist.net/anime.php?letter=J&show=450', 'https://myanimelist.net/anime.php?letter=J&show=500', 'https://myanimelist.net/anime.php?letter=J&show=550']}
+2024-08-16 11:00:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=K> (referer: None)
+2024-08-16 11:00:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=L>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=L&show=0', 'https://myanimelist.net/anime.php?letter=L&show=50', 'https://myanimelist.net/anime.php?letter=L&show=100', 'https://myanimelist.net/anime.php?letter=L&show=150', 'https://myanimelist.net/anime.php?letter=L&show=200', 'https://myanimelist.net/anime.php?letter=L&show=250', 'https://myanimelist.net/anime.php?letter=L&show=300', 'https://myanimelist.net/anime.php?letter=L&show=350', 'https://myanimelist.net/anime.php?letter=L&show=400', 'https://myanimelist.net/anime.php?letter=L&show=450', 'https://myanimelist.net/anime.php?letter=L&show=500', 'https://myanimelist.net/anime.php?letter=L&show=550', 'https://myanimelist.net/anime.php?letter=L&show=600']}
+2024-08-16 11:00:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=K>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=K&show=0', 'https://myanimelist.net/anime.php?letter=K&show=50', 'https://myanimelist.net/anime.php?letter=K&show=100', 'https://myanimelist.net/anime.php?letter=K&show=150', 'https://myanimelist.net/anime.php?letter=K&show=200', 'https://myanimelist.net/anime.php?letter=K&show=250', 'https://myanimelist.net/anime.php?letter=K&show=300', 'https://myanimelist.net/anime.php?letter=K&show=350', 'https://myanimelist.net/anime.php?letter=K&show=400', 'https://myanimelist.net/anime.php?letter=K&show=450', 'https://myanimelist.net/anime.php?letter=K&show=500', 'https://myanimelist.net/anime.php?letter=K&show=550', 'https://myanimelist.net/anime.php?letter=K&show=600', 'https://myanimelist.net/anime.php?letter=K&show=650', 'https://myanimelist.net/anime.php?letter=K&show=700', 'https://myanimelist.net/anime.php?letter=K&show=750', 'https://myanimelist.net/anime.php?letter=K&show=800', 'https://myanimelist.net/anime.php?letter=K&show=850', 'https://myanimelist.net/anime.php?letter=K&show=900', 'https://myanimelist.net/anime.php?letter=K&show=950']}
+2024-08-16 11:00:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=O> (referer: None)
+2024-08-16 11:00:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=O>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=O&show=0', 'https://myanimelist.net/anime.php?letter=O&show=50', 'https://myanimelist.net/anime.php?letter=O&show=100', 'https://myanimelist.net/anime.php?letter=O&show=150', 'https://myanimelist.net/anime.php?letter=O&show=200', 'https://myanimelist.net/anime.php?letter=O&show=250', 'https://myanimelist.net/anime.php?letter=O&show=300', 'https://myanimelist.net/anime.php?letter=O&show=350', 'https://myanimelist.net/anime.php?letter=O&show=400', 'https://myanimelist.net/anime.php?letter=O&show=450', 'https://myanimelist.net/anime.php?letter=O&show=500', 'https://myanimelist.net/anime.php?letter=O&show=550', 'https://myanimelist.net/anime.php?letter=O&show=600', 'https://myanimelist.net/anime.php?letter=O&show=650', 'https://myanimelist.net/anime.php?letter=O&show=700', 'https://myanimelist.net/anime.php?letter=O&show=750', 'https://myanimelist.net/anime.php?letter=O&show=800', 'https://myanimelist.net/anime.php?letter=O&show=850']}
+2024-08-16 11:00:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=Q> (referer: None)
+2024-08-16 11:00:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=P> (referer: None)
+2024-08-16 11:00:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=N> (referer: None)
+2024-08-16 11:00:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=R> (referer: None)
+2024-08-16 11:00:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=Q>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=Q&show=0', 'https://myanimelist.net/anime.php?letter=Q&show=50', 'https://myanimelist.net/anime.php?letter=Q&show=100', 'https://myanimelist.net/anime.php?letter=Q&show=150', 'https://myanimelist.net/anime.php?letter=Q&show=200']}
+2024-08-16 11:00:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=P>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=P&show=0', 'https://myanimelist.net/anime.php?letter=P&show=50', 'https://myanimelist.net/anime.php?letter=P&show=100', 'https://myanimelist.net/anime.php?letter=P&show=150', 'https://myanimelist.net/anime.php?letter=P&show=200', 'https://myanimelist.net/anime.php?letter=P&show=250', 'https://myanimelist.net/anime.php?letter=P&show=300', 'https://myanimelist.net/anime.php?letter=P&show=350', 'https://myanimelist.net/anime.php?letter=P&show=400', 'https://myanimelist.net/anime.php?letter=P&show=450', 'https://myanimelist.net/anime.php?letter=P&show=500', 'https://myanimelist.net/anime.php?letter=P&show=550', 'https://myanimelist.net/anime.php?letter=P&show=600', 'https://myanimelist.net/anime.php?letter=P&show=650', 'https://myanimelist.net/anime.php?letter=P&show=700', 'https://myanimelist.net/anime.php?letter=P&show=750', 'https://myanimelist.net/anime.php?letter=P&show=800', 'https://myanimelist.net/anime.php?letter=P&show=850', 'https://myanimelist.net/anime.php?letter=P&show=900']}
+2024-08-16 11:00:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=N>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=N&show=0', 'https://myanimelist.net/anime.php?letter=N&show=50', 'https://myanimelist.net/anime.php?letter=N&show=100', 'https://myanimelist.net/anime.php?letter=N&show=150', 'https://myanimelist.net/anime.php?letter=N&show=200', 'https://myanimelist.net/anime.php?letter=N&show=250', 'https://myanimelist.net/anime.php?letter=N&show=300', 'https://myanimelist.net/anime.php?letter=N&show=350', 'https://myanimelist.net/anime.php?letter=N&show=400', 'https://myanimelist.net/anime.php?letter=N&show=450', 'https://myanimelist.net/anime.php?letter=N&show=500', 'https://myanimelist.net/anime.php?letter=N&show=550', 'https://myanimelist.net/anime.php?letter=N&show=600', 'https://myanimelist.net/anime.php?letter=N&show=650', 'https://myanimelist.net/anime.php?letter=N&show=700', 'https://myanimelist.net/anime.php?letter=N&show=750', 'https://myanimelist.net/anime.php?letter=N&show=800', 'https://myanimelist.net/anime.php?letter=N&show=850', 'https://myanimelist.net/anime.php?letter=N&show=900', 'https://myanimelist.net/anime.php?letter=N&show=950']}
+2024-08-16 11:00:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=S> (referer: None)
+2024-08-16 11:00:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=T> (referer: None)
+2024-08-16 11:00:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=R>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=R&show=0', 'https://myanimelist.net/anime.php?letter=R&show=50', 'https://myanimelist.net/anime.php?letter=R&show=100', 'https://myanimelist.net/anime.php?letter=R&show=150', 'https://myanimelist.net/anime.php?letter=R&show=200', 'https://myanimelist.net/anime.php?letter=R&show=250', 'https://myanimelist.net/anime.php?letter=R&show=300', 'https://myanimelist.net/anime.php?letter=R&show=350', 'https://myanimelist.net/anime.php?letter=R&show=400', 'https://myanimelist.net/anime.php?letter=R&show=450', 'https://myanimelist.net/anime.php?letter=R&show=500', 'https://myanimelist.net/anime.php?letter=R&show=550', 'https://myanimelist.net/anime.php?letter=R&show=600']}
+2024-08-16 11:00:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=M> (referer: None)
+2024-08-16 11:00:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=S>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=S&show=0', 'https://myanimelist.net/anime.php?letter=S&show=50', 'https://myanimelist.net/anime.php?letter=S&show=100', 'https://myanimelist.net/anime.php?letter=S&show=150', 'https://myanimelist.net/anime.php?letter=S&show=200', 'https://myanimelist.net/anime.php?letter=S&show=250', 'https://myanimelist.net/anime.php?letter=S&show=300', 'https://myanimelist.net/anime.php?letter=S&show=350', 'https://myanimelist.net/anime.php?letter=S&show=400', 'https://myanimelist.net/anime.php?letter=S&show=450', 'https://myanimelist.net/anime.php?letter=S&show=500', 'https://myanimelist.net/anime.php?letter=S&show=550', 'https://myanimelist.net/anime.php?letter=S&show=600', 'https://myanimelist.net/anime.php?letter=S&show=650', 'https://myanimelist.net/anime.php?letter=S&show=700', 'https://myanimelist.net/anime.php?letter=S&show=750', 'https://myanimelist.net/anime.php?letter=S&show=800', 'https://myanimelist.net/anime.php?letter=S&show=850', 'https://myanimelist.net/anime.php?letter=S&show=900', 'https://myanimelist.net/anime.php?letter=S&show=950']}
+2024-08-16 11:00:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=T>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=T&show=0', 'https://myanimelist.net/anime.php?letter=T&show=50', 'https://myanimelist.net/anime.php?letter=T&show=100', 'https://myanimelist.net/anime.php?letter=T&show=150', 'https://myanimelist.net/anime.php?letter=T&show=200', 'https://myanimelist.net/anime.php?letter=T&show=250', 'https://myanimelist.net/anime.php?letter=T&show=300', 'https://myanimelist.net/anime.php?letter=T&show=350', 'https://myanimelist.net/anime.php?letter=T&show=400', 'https://myanimelist.net/anime.php?letter=T&show=450', 'https://myanimelist.net/anime.php?letter=T&show=500', 'https://myanimelist.net/anime.php?letter=T&show=550', 'https://myanimelist.net/anime.php?letter=T&show=600', 'https://myanimelist.net/anime.php?letter=T&show=650', 'https://myanimelist.net/anime.php?letter=T&show=700', 'https://myanimelist.net/anime.php?letter=T&show=750', 'https://myanimelist.net/anime.php?letter=T&show=800', 'https://myanimelist.net/anime.php?letter=T&show=850', 'https://myanimelist.net/anime.php?letter=T&show=900', 'https://myanimelist.net/anime.php?letter=T&show=950']}
+2024-08-16 11:00:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=M>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=M&show=0', 'https://myanimelist.net/anime.php?letter=M&show=50', 'https://myanimelist.net/anime.php?letter=M&show=100', 'https://myanimelist.net/anime.php?letter=M&show=150', 'https://myanimelist.net/anime.php?letter=M&show=200', 'https://myanimelist.net/anime.php?letter=M&show=250', 'https://myanimelist.net/anime.php?letter=M&show=300', 'https://myanimelist.net/anime.php?letter=M&show=350', 'https://myanimelist.net/anime.php?letter=M&show=400', 'https://myanimelist.net/anime.php?letter=M&show=450', 'https://myanimelist.net/anime.php?letter=M&show=500', 'https://myanimelist.net/anime.php?letter=M&show=550', 'https://myanimelist.net/anime.php?letter=M&show=600', 'https://myanimelist.net/anime.php?letter=M&show=650', 'https://myanimelist.net/anime.php?letter=M&show=700', 'https://myanimelist.net/anime.php?letter=M&show=750', 'https://myanimelist.net/anime.php?letter=M&show=800', 'https://myanimelist.net/anime.php?letter=M&show=850', 'https://myanimelist.net/anime.php?letter=M&show=900', 'https://myanimelist.net/anime.php?letter=M&show=950']}
+2024-08-16 11:00:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=X> (referer: None)
+2024-08-16 11:00:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=U> (referer: None)
+2024-08-16 11:00:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=X>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=X&show=0', 'https://myanimelist.net/anime.php?letter=X&show=50', 'https://myanimelist.net/anime.php?letter=X&show=100', 'https://myanimelist.net/anime.php?letter=X&show=150', 'https://myanimelist.net/anime.php?letter=X&show=200', 'https://myanimelist.net/anime.php?letter=X&show=250', 'https://myanimelist.net/anime.php?letter=X&show=300', 'https://myanimelist.net/anime.php?letter=X&show=350', 'https://myanimelist.net/anime.php?letter=X&show=400', 'https://myanimelist.net/anime.php?letter=X&show=450', 'https://myanimelist.net/anime.php?letter=X&show=500', 'https://myanimelist.net/anime.php?letter=X&show=550', 'https://myanimelist.net/anime.php?letter=X&show=600']}
+2024-08-16 11:00:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=V> (referer: None)
+2024-08-16 11:00:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=U>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=U&show=0', 'https://myanimelist.net/anime.php?letter=U&show=50', 'https://myanimelist.net/anime.php?letter=U&show=100', 'https://myanimelist.net/anime.php?letter=U&show=150', 'https://myanimelist.net/anime.php?letter=U&show=200', 'https://myanimelist.net/anime.php?letter=U&show=250', 'https://myanimelist.net/anime.php?letter=U&show=300', 'https://myanimelist.net/anime.php?letter=U&show=350', 'https://myanimelist.net/anime.php?letter=U&show=400']}
+2024-08-16 11:00:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=Z> (referer: None)
+2024-08-16 11:00:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=V>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=V&show=0', 'https://myanimelist.net/anime.php?letter=V&show=50', 'https://myanimelist.net/anime.php?letter=V&show=100']}
+2024-08-16 11:00:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=Z>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=Z&show=0', 'https://myanimelist.net/anime.php?letter=Z&show=50', 'https://myanimelist.net/anime.php?letter=Z&show=100', 'https://myanimelist.net/anime.php?letter=Z&show=150', 'https://myanimelist.net/anime.php?letter=Z&show=200', 'https://myanimelist.net/anime.php?letter=Z&show=250', 'https://myanimelist.net/anime.php?letter=Z&show=300', 'https://myanimelist.net/anime.php?letter=Z&show=350']}
+2024-08-16 11:00:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=Y> (referer: None)
+2024-08-16 11:00:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=W> (referer: None)
+2024-08-16 11:00:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=Y>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=Y&show=0', 'https://myanimelist.net/anime.php?letter=Y&show=50', 'https://myanimelist.net/anime.php?letter=Y&show=100', 'https://myanimelist.net/anime.php?letter=Y&show=150', 'https://myanimelist.net/anime.php?letter=Y&show=200', 'https://myanimelist.net/anime.php?letter=Y&show=250', 'https://myanimelist.net/anime.php?letter=Y&show=300', 'https://myanimelist.net/anime.php?letter=Y&show=350', 'https://myanimelist.net/anime.php?letter=Y&show=400', 'https://myanimelist.net/anime.php?letter=Y&show=450', 'https://myanimelist.net/anime.php?letter=Y&show=500', 'https://myanimelist.net/anime.php?letter=Y&show=550', 'https://myanimelist.net/anime.php?letter=Y&show=600', 'https://myanimelist.net/anime.php?letter=Y&show=650', 'https://myanimelist.net/anime.php?letter=Y&show=700', 'https://myanimelist.net/anime.php?letter=Y&show=750', 'https://myanimelist.net/anime.php?letter=Y&show=800', 'https://myanimelist.net/anime.php?letter=Y&show=850', 'https://myanimelist.net/anime.php?letter=Y&show=900']}
+2024-08-16 11:00:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=W>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=W&show=0', 'https://myanimelist.net/anime.php?letter=W&show=50', 'https://myanimelist.net/anime.php?letter=W&show=100', 'https://myanimelist.net/anime.php?letter=W&show=150', 'https://myanimelist.net/anime.php?letter=W&show=200', 'https://myanimelist.net/anime.php?letter=W&show=250', 'https://myanimelist.net/anime.php?letter=W&show=300', 'https://myanimelist.net/anime.php?letter=W&show=350', 'https://myanimelist.net/anime.php?letter=W&show=400', 'https://myanimelist.net/anime.php?letter=W&show=450', 'https://myanimelist.net/anime.php?letter=W&show=500', 'https://myanimelist.net/anime.php?letter=W&show=550', 'https://myanimelist.net/anime.php?letter=W&show=600']}
+2024-08-16 11:00:45 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-08-16 11:00:45 [scrapy.extensions.feedexport] INFO: Stored json feed (27 items) in: data/pages_urls.csv
+2024-08-16 11:00:45 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 10031,
+ 'downloader/request_count': 27,
+ 'downloader/request_method_count/GET': 27,
+ 'downloader/response_bytes': 7434376,
+ 'downloader/response_count': 27,
+ 'downloader/response_status_count/200': 27,
+ 'elapsed_time_seconds': 3.376707,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 8, 16, 5, 30, 45, 288974, tzinfo=datetime.timezone.utc),
+ 'item_scraped_count': 27,
+ 'log_count/DEBUG': 55,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 2,
+ 'response_received_count': 27,
+ 'scheduler/dequeued': 27,
+ 'scheduler/dequeued/memory': 27,
+ 'scheduler/enqueued': 27,
+ 'scheduler/enqueued/memory': 27,
+ 'start_time': datetime.datetime(2024, 8, 16, 5, 30, 41, 912267, tzinfo=datetime.timezone.utc)}
+2024-08-16 11:00:45 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-08-16 11:04:54 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-08-16 11:04:54 [py.warnings] WARNING: D:\Gaurav\PRACTICE\PYTHON\anime-scraper\.venv\Lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-08-16 11:04:55 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2024-08-16 11:04:55 [scrapy.extensions.telnet] INFO: Telnet Password: 0b2f5a6a43092f3f
+2024-08-16 11:04:55 [py.warnings] WARNING: D:\Gaurav\PRACTICE\PYTHON\anime-scraper\.venv\Lib\site-packages\scrapy\extensions\feedexport.py:406: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2024-08-16 11:04:55 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2024-08-16 11:04:55 [scrapy.crawler] INFO: Overridden settings:
+{'LOG_FILE': 'data/AnimeScrape.log'}
+2024-08-16 11:04:55 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-08-16 11:04:55 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-08-16 11:04:55 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-08-16 11:04:55 [scrapy.core.engine] INFO: Spider opened
+2024-08-16 11:04:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-08-16 11:04:56 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=B> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=.> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=F> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=G> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=D> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=C> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=A> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=B>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=B&show=0', 'https://myanimelist.net/anime.php?letter=B&show=50', 'https://myanimelist.net/anime.php?letter=B&show=100', 'https://myanimelist.net/anime.php?letter=B&show=150', 'https://myanimelist.net/anime.php?letter=B&show=200', 'https://myanimelist.net/anime.php?letter=B&show=250', 'https://myanimelist.net/anime.php?letter=B&show=300', 'https://myanimelist.net/anime.php?letter=B&show=350', 'https://myanimelist.net/anime.php?letter=B&show=400', 'https://myanimelist.net/anime.php?letter=B&show=450', 'https://myanimelist.net/anime.php?letter=B&show=500', 'https://myanimelist.net/anime.php?letter=B&show=550', 'https://myanimelist.net/anime.php?letter=B&show=600', 'https://myanimelist.net/anime.php?letter=B&show=650', 'https://myanimelist.net/anime.php?letter=B&show=700', 'https://myanimelist.net/anime.php?letter=B&show=750', 'https://myanimelist.net/anime.php?letter=B&show=800', 'https://myanimelist.net/anime.php?letter=B&show=850', 'https://myanimelist.net/anime.php?letter=B&show=900', 'https://myanimelist.net/anime.php?letter=B&show=950']}
+2024-08-16 11:04:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=.>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=.&show=0', 'https://myanimelist.net/anime.php?letter=.&show=50', 'https://myanimelist.net/anime.php?letter=.&show=100', 'https://myanimelist.net/anime.php?letter=.&show=150', 'https://myanimelist.net/anime.php?letter=.&show=200']}
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=E> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=F>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=F&show=0', 'https://myanimelist.net/anime.php?letter=F&show=50', 'https://myanimelist.net/anime.php?letter=F&show=100', 'https://myanimelist.net/anime.php?letter=F&show=150', 'https://myanimelist.net/anime.php?letter=F&show=200', 'https://myanimelist.net/anime.php?letter=F&show=250', 'https://myanimelist.net/anime.php?letter=F&show=300', 'https://myanimelist.net/anime.php?letter=F&show=350', 'https://myanimelist.net/anime.php?letter=F&show=400', 'https://myanimelist.net/anime.php?letter=F&show=450', 'https://myanimelist.net/anime.php?letter=F&show=500', 'https://myanimelist.net/anime.php?letter=F&show=550', 'https://myanimelist.net/anime.php?letter=F&show=600', 'https://myanimelist.net/anime.php?letter=F&show=650']}
+2024-08-16 11:04:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=G>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=G&show=0', 'https://myanimelist.net/anime.php?letter=G&show=50', 'https://myanimelist.net/anime.php?letter=G&show=100', 'https://myanimelist.net/anime.php?letter=G&show=150', 'https://myanimelist.net/anime.php?letter=G&show=200', 'https://myanimelist.net/anime.php?letter=G&show=250', 'https://myanimelist.net/anime.php?letter=G&show=300', 'https://myanimelist.net/anime.php?letter=G&show=350', 'https://myanimelist.net/anime.php?letter=G&show=400', 'https://myanimelist.net/anime.php?letter=G&show=450', 'https://myanimelist.net/anime.php?letter=G&show=500', 'https://myanimelist.net/anime.php?letter=G&show=550', 'https://myanimelist.net/anime.php?letter=G&show=600', 'https://myanimelist.net/anime.php?letter=G&show=650', 'https://myanimelist.net/anime.php?letter=G&show=700', 'https://myanimelist.net/anime.php?letter=G&show=750', 'https://myanimelist.net/anime.php?letter=G&show=800', 'https://myanimelist.net/anime.php?letter=G&show=850', 'https://myanimelist.net/anime.php?letter=G&show=900', 'https://myanimelist.net/anime.php?letter=G&show=950']}
+2024-08-16 11:04:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=D>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=D&show=0', 'https://myanimelist.net/anime.php?letter=D&show=50', 'https://myanimelist.net/anime.php?letter=D&show=100', 'https://myanimelist.net/anime.php?letter=D&show=150', 'https://myanimelist.net/anime.php?letter=D&show=200', 'https://myanimelist.net/anime.php?letter=D&show=250', 'https://myanimelist.net/anime.php?letter=D&show=300', 'https://myanimelist.net/anime.php?letter=D&show=350', 'https://myanimelist.net/anime.php?letter=D&show=400', 'https://myanimelist.net/anime.php?letter=D&show=450', 'https://myanimelist.net/anime.php?letter=D&show=500', 'https://myanimelist.net/anime.php?letter=D&show=550', 'https://myanimelist.net/anime.php?letter=D&show=600', 'https://myanimelist.net/anime.php?letter=D&show=650', 'https://myanimelist.net/anime.php?letter=D&show=700', 'https://myanimelist.net/anime.php?letter=D&show=750', 'https://myanimelist.net/anime.php?letter=D&show=800', 'https://myanimelist.net/anime.php?letter=D&show=850', 'https://myanimelist.net/anime.php?letter=D&show=900', 'https://myanimelist.net/anime.php?letter=D&show=950']}
+2024-08-16 11:04:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=C>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=C&show=0', 'https://myanimelist.net/anime.php?letter=C&show=50', 'https://myanimelist.net/anime.php?letter=C&show=100', 'https://myanimelist.net/anime.php?letter=C&show=150', 'https://myanimelist.net/anime.php?letter=C&show=200', 'https://myanimelist.net/anime.php?letter=C&show=250', 'https://myanimelist.net/anime.php?letter=C&show=300', 'https://myanimelist.net/anime.php?letter=C&show=350', 'https://myanimelist.net/anime.php?letter=C&show=400', 'https://myanimelist.net/anime.php?letter=C&show=450', 'https://myanimelist.net/anime.php?letter=C&show=500', 'https://myanimelist.net/anime.php?letter=C&show=550', 'https://myanimelist.net/anime.php?letter=C&show=600', 'https://myanimelist.net/anime.php?letter=C&show=650', 'https://myanimelist.net/anime.php?letter=C&show=700', 'https://myanimelist.net/anime.php?letter=C&show=750', 'https://myanimelist.net/anime.php?letter=C&show=800', 'https://myanimelist.net/anime.php?letter=C&show=850', 'https://myanimelist.net/anime.php?letter=C&show=900', 'https://myanimelist.net/anime.php?letter=C&show=950']}
+2024-08-16 11:04:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=A>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=A&show=0', 'https://myanimelist.net/anime.php?letter=A&show=50', 'https://myanimelist.net/anime.php?letter=A&show=100', 'https://myanimelist.net/anime.php?letter=A&show=150', 'https://myanimelist.net/anime.php?letter=A&show=200', 'https://myanimelist.net/anime.php?letter=A&show=250', 'https://myanimelist.net/anime.php?letter=A&show=300', 'https://myanimelist.net/anime.php?letter=A&show=350', 'https://myanimelist.net/anime.php?letter=A&show=400', 'https://myanimelist.net/anime.php?letter=A&show=450', 'https://myanimelist.net/anime.php?letter=A&show=500', 'https://myanimelist.net/anime.php?letter=A&show=550', 'https://myanimelist.net/anime.php?letter=A&show=600', 'https://myanimelist.net/anime.php?letter=A&show=650', 'https://myanimelist.net/anime.php?letter=A&show=700', 'https://myanimelist.net/anime.php?letter=A&show=750', 'https://myanimelist.net/anime.php?letter=A&show=800', 'https://myanimelist.net/anime.php?letter=A&show=850', 'https://myanimelist.net/anime.php?letter=A&show=900', 'https://myanimelist.net/anime.php?letter=A&show=950']}
+2024-08-16 11:04:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=E>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=E&show=0', 'https://myanimelist.net/anime.php?letter=E&show=50', 'https://myanimelist.net/anime.php?letter=E&show=100', 'https://myanimelist.net/anime.php?letter=E&show=150', 'https://myanimelist.net/anime.php?letter=E&show=200', 'https://myanimelist.net/anime.php?letter=E&show=250', 'https://myanimelist.net/anime.php?letter=E&show=300']}
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=I> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=J> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=L> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=H> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=K> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=I>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=I&show=0', 'https://myanimelist.net/anime.php?letter=I&show=50', 'https://myanimelist.net/anime.php?letter=I&show=100', 'https://myanimelist.net/anime.php?letter=I&show=150', 'https://myanimelist.net/anime.php?letter=I&show=200', 'https://myanimelist.net/anime.php?letter=I&show=250', 'https://myanimelist.net/anime.php?letter=I&show=300', 'https://myanimelist.net/anime.php?letter=I&show=350', 'https://myanimelist.net/anime.php?letter=I&show=400', 'https://myanimelist.net/anime.php?letter=I&show=450', 'https://myanimelist.net/anime.php?letter=I&show=500', 'https://myanimelist.net/anime.php?letter=I&show=550', 'https://myanimelist.net/anime.php?letter=I&show=600']}
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=M> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=J>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=J&show=0', 'https://myanimelist.net/anime.php?letter=J&show=50', 'https://myanimelist.net/anime.php?letter=J&show=100', 'https://myanimelist.net/anime.php?letter=J&show=150', 'https://myanimelist.net/anime.php?letter=J&show=200', 'https://myanimelist.net/anime.php?letter=J&show=250', 'https://myanimelist.net/anime.php?letter=J&show=300', 'https://myanimelist.net/anime.php?letter=J&show=350', 'https://myanimelist.net/anime.php?letter=J&show=400', 'https://myanimelist.net/anime.php?letter=J&show=450', 'https://myanimelist.net/anime.php?letter=J&show=500', 'https://myanimelist.net/anime.php?letter=J&show=550']}
+2024-08-16 11:04:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=L>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=L&show=0', 'https://myanimelist.net/anime.php?letter=L&show=50', 'https://myanimelist.net/anime.php?letter=L&show=100', 'https://myanimelist.net/anime.php?letter=L&show=150', 'https://myanimelist.net/anime.php?letter=L&show=200', 'https://myanimelist.net/anime.php?letter=L&show=250', 'https://myanimelist.net/anime.php?letter=L&show=300', 'https://myanimelist.net/anime.php?letter=L&show=350', 'https://myanimelist.net/anime.php?letter=L&show=400', 'https://myanimelist.net/anime.php?letter=L&show=450', 'https://myanimelist.net/anime.php?letter=L&show=500', 'https://myanimelist.net/anime.php?letter=L&show=550', 'https://myanimelist.net/anime.php?letter=L&show=600']}
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=N> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=H>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=H&show=0', 'https://myanimelist.net/anime.php?letter=H&show=50', 'https://myanimelist.net/anime.php?letter=H&show=100', 'https://myanimelist.net/anime.php?letter=H&show=150', 'https://myanimelist.net/anime.php?letter=H&show=200', 'https://myanimelist.net/anime.php?letter=H&show=250', 'https://myanimelist.net/anime.php?letter=H&show=300', 'https://myanimelist.net/anime.php?letter=H&show=350', 'https://myanimelist.net/anime.php?letter=H&show=400', 'https://myanimelist.net/anime.php?letter=H&show=450', 'https://myanimelist.net/anime.php?letter=H&show=500', 'https://myanimelist.net/anime.php?letter=H&show=550', 'https://myanimelist.net/anime.php?letter=H&show=600', 'https://myanimelist.net/anime.php?letter=H&show=650', 'https://myanimelist.net/anime.php?letter=H&show=700', 'https://myanimelist.net/anime.php?letter=H&show=750', 'https://myanimelist.net/anime.php?letter=H&show=800', 'https://myanimelist.net/anime.php?letter=H&show=850', 'https://myanimelist.net/anime.php?letter=H&show=900', 'https://myanimelist.net/anime.php?letter=H&show=950']}
+2024-08-16 11:04:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=K>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=K&show=0', 'https://myanimelist.net/anime.php?letter=K&show=50', 'https://myanimelist.net/anime.php?letter=K&show=100', 'https://myanimelist.net/anime.php?letter=K&show=150', 'https://myanimelist.net/anime.php?letter=K&show=200', 'https://myanimelist.net/anime.php?letter=K&show=250', 'https://myanimelist.net/anime.php?letter=K&show=300', 'https://myanimelist.net/anime.php?letter=K&show=350', 'https://myanimelist.net/anime.php?letter=K&show=400', 'https://myanimelist.net/anime.php?letter=K&show=450', 'https://myanimelist.net/anime.php?letter=K&show=500', 'https://myanimelist.net/anime.php?letter=K&show=550', 'https://myanimelist.net/anime.php?letter=K&show=600', 'https://myanimelist.net/anime.php?letter=K&show=650', 'https://myanimelist.net/anime.php?letter=K&show=700', 'https://myanimelist.net/anime.php?letter=K&show=750', 'https://myanimelist.net/anime.php?letter=K&show=800', 'https://myanimelist.net/anime.php?letter=K&show=850', 'https://myanimelist.net/anime.php?letter=K&show=900', 'https://myanimelist.net/anime.php?letter=K&show=950']}
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=O> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=P> (referer: None)
+2024-08-16 11:04:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=M>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=M&show=0', 'https://myanimelist.net/anime.php?letter=M&show=50', 'https://myanimelist.net/anime.php?letter=M&show=100', 'https://myanimelist.net/anime.php?letter=M&show=150', 'https://myanimelist.net/anime.php?letter=M&show=200', 'https://myanimelist.net/anime.php?letter=M&show=250', 'https://myanimelist.net/anime.php?letter=M&show=300', 'https://myanimelist.net/anime.php?letter=M&show=350', 'https://myanimelist.net/anime.php?letter=M&show=400', 'https://myanimelist.net/anime.php?letter=M&show=450', 'https://myanimelist.net/anime.php?letter=M&show=500', 'https://myanimelist.net/anime.php?letter=M&show=550', 'https://myanimelist.net/anime.php?letter=M&show=600', 'https://myanimelist.net/anime.php?letter=M&show=650', 'https://myanimelist.net/anime.php?letter=M&show=700', 'https://myanimelist.net/anime.php?letter=M&show=750', 'https://myanimelist.net/anime.php?letter=M&show=800', 'https://myanimelist.net/anime.php?letter=M&show=850', 'https://myanimelist.net/anime.php?letter=M&show=900', 'https://myanimelist.net/anime.php?letter=M&show=950']}
+2024-08-16 11:04:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=N>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=N&show=0', 'https://myanimelist.net/anime.php?letter=N&show=50', 'https://myanimelist.net/anime.php?letter=N&show=100', 'https://myanimelist.net/anime.php?letter=N&show=150', 'https://myanimelist.net/anime.php?letter=N&show=200', 'https://myanimelist.net/anime.php?letter=N&show=250', 'https://myanimelist.net/anime.php?letter=N&show=300', 'https://myanimelist.net/anime.php?letter=N&show=350', 'https://myanimelist.net/anime.php?letter=N&show=400', 'https://myanimelist.net/anime.php?letter=N&show=450', 'https://myanimelist.net/anime.php?letter=N&show=500', 'https://myanimelist.net/anime.php?letter=N&show=550', 'https://myanimelist.net/anime.php?letter=N&show=600', 'https://myanimelist.net/anime.php?letter=N&show=650', 'https://myanimelist.net/anime.php?letter=N&show=700', 'https://myanimelist.net/anime.php?letter=N&show=750', 'https://myanimelist.net/anime.php?letter=N&show=800', 'https://myanimelist.net/anime.php?letter=N&show=850', 'https://myanimelist.net/anime.php?letter=N&show=900', 'https://myanimelist.net/anime.php?letter=N&show=950']}
+2024-08-16 11:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=Q> (referer: None)
+2024-08-16 11:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=T> (referer: None)
+2024-08-16 11:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=R> (referer: None)
+2024-08-16 11:04:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=O>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=O&show=0', 'https://myanimelist.net/anime.php?letter=O&show=50', 'https://myanimelist.net/anime.php?letter=O&show=100', 'https://myanimelist.net/anime.php?letter=O&show=150', 'https://myanimelist.net/anime.php?letter=O&show=200', 'https://myanimelist.net/anime.php?letter=O&show=250', 'https://myanimelist.net/anime.php?letter=O&show=300', 'https://myanimelist.net/anime.php?letter=O&show=350', 'https://myanimelist.net/anime.php?letter=O&show=400', 'https://myanimelist.net/anime.php?letter=O&show=450', 'https://myanimelist.net/anime.php?letter=O&show=500', 'https://myanimelist.net/anime.php?letter=O&show=550', 'https://myanimelist.net/anime.php?letter=O&show=600', 'https://myanimelist.net/anime.php?letter=O&show=650', 'https://myanimelist.net/anime.php?letter=O&show=700', 'https://myanimelist.net/anime.php?letter=O&show=750', 'https://myanimelist.net/anime.php?letter=O&show=800', 'https://myanimelist.net/anime.php?letter=O&show=850']}
+2024-08-16 11:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=S> (referer: None)
+2024-08-16 11:04:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=P>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=P&show=0', 'https://myanimelist.net/anime.php?letter=P&show=50', 'https://myanimelist.net/anime.php?letter=P&show=100', 'https://myanimelist.net/anime.php?letter=P&show=150', 'https://myanimelist.net/anime.php?letter=P&show=200', 'https://myanimelist.net/anime.php?letter=P&show=250', 'https://myanimelist.net/anime.php?letter=P&show=300', 'https://myanimelist.net/anime.php?letter=P&show=350', 'https://myanimelist.net/anime.php?letter=P&show=400', 'https://myanimelist.net/anime.php?letter=P&show=450', 'https://myanimelist.net/anime.php?letter=P&show=500', 'https://myanimelist.net/anime.php?letter=P&show=550', 'https://myanimelist.net/anime.php?letter=P&show=600', 'https://myanimelist.net/anime.php?letter=P&show=650', 'https://myanimelist.net/anime.php?letter=P&show=700', 'https://myanimelist.net/anime.php?letter=P&show=750', 'https://myanimelist.net/anime.php?letter=P&show=800', 'https://myanimelist.net/anime.php?letter=P&show=850', 'https://myanimelist.net/anime.php?letter=P&show=900']}
+2024-08-16 11:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=U> (referer: None)
+2024-08-16 11:04:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=Q>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=Q&show=0', 'https://myanimelist.net/anime.php?letter=Q&show=50', 'https://myanimelist.net/anime.php?letter=Q&show=100', 'https://myanimelist.net/anime.php?letter=Q&show=150', 'https://myanimelist.net/anime.php?letter=Q&show=200']}
+2024-08-16 11:04:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=T>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=T&show=0', 'https://myanimelist.net/anime.php?letter=T&show=50', 'https://myanimelist.net/anime.php?letter=T&show=100', 'https://myanimelist.net/anime.php?letter=T&show=150', 'https://myanimelist.net/anime.php?letter=T&show=200', 'https://myanimelist.net/anime.php?letter=T&show=250', 'https://myanimelist.net/anime.php?letter=T&show=300', 'https://myanimelist.net/anime.php?letter=T&show=350', 'https://myanimelist.net/anime.php?letter=T&show=400', 'https://myanimelist.net/anime.php?letter=T&show=450', 'https://myanimelist.net/anime.php?letter=T&show=500', 'https://myanimelist.net/anime.php?letter=T&show=550', 'https://myanimelist.net/anime.php?letter=T&show=600', 'https://myanimelist.net/anime.php?letter=T&show=650', 'https://myanimelist.net/anime.php?letter=T&show=700', 'https://myanimelist.net/anime.php?letter=T&show=750', 'https://myanimelist.net/anime.php?letter=T&show=800', 'https://myanimelist.net/anime.php?letter=T&show=850', 'https://myanimelist.net/anime.php?letter=T&show=900', 'https://myanimelist.net/anime.php?letter=T&show=950']}
+2024-08-16 11:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=V> (referer: None)
+2024-08-16 11:04:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=R>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=R&show=0', 'https://myanimelist.net/anime.php?letter=R&show=50', 'https://myanimelist.net/anime.php?letter=R&show=100', 'https://myanimelist.net/anime.php?letter=R&show=150', 'https://myanimelist.net/anime.php?letter=R&show=200', 'https://myanimelist.net/anime.php?letter=R&show=250', 'https://myanimelist.net/anime.php?letter=R&show=300', 'https://myanimelist.net/anime.php?letter=R&show=350', 'https://myanimelist.net/anime.php?letter=R&show=400', 'https://myanimelist.net/anime.php?letter=R&show=450', 'https://myanimelist.net/anime.php?letter=R&show=500', 'https://myanimelist.net/anime.php?letter=R&show=550', 'https://myanimelist.net/anime.php?letter=R&show=600']}
+2024-08-16 11:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=W> (referer: None)
+2024-08-16 11:04:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=S>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=S&show=0', 'https://myanimelist.net/anime.php?letter=S&show=50', 'https://myanimelist.net/anime.php?letter=S&show=100', 'https://myanimelist.net/anime.php?letter=S&show=150', 'https://myanimelist.net/anime.php?letter=S&show=200', 'https://myanimelist.net/anime.php?letter=S&show=250', 'https://myanimelist.net/anime.php?letter=S&show=300', 'https://myanimelist.net/anime.php?letter=S&show=350', 'https://myanimelist.net/anime.php?letter=S&show=400', 'https://myanimelist.net/anime.php?letter=S&show=450', 'https://myanimelist.net/anime.php?letter=S&show=500', 'https://myanimelist.net/anime.php?letter=S&show=550', 'https://myanimelist.net/anime.php?letter=S&show=600', 'https://myanimelist.net/anime.php?letter=S&show=650', 'https://myanimelist.net/anime.php?letter=S&show=700', 'https://myanimelist.net/anime.php?letter=S&show=750', 'https://myanimelist.net/anime.php?letter=S&show=800', 'https://myanimelist.net/anime.php?letter=S&show=850', 'https://myanimelist.net/anime.php?letter=S&show=900', 'https://myanimelist.net/anime.php?letter=S&show=950']}
+2024-08-16 11:04:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=U>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=U&show=0', 'https://myanimelist.net/anime.php?letter=U&show=50', 'https://myanimelist.net/anime.php?letter=U&show=100', 'https://myanimelist.net/anime.php?letter=U&show=150', 'https://myanimelist.net/anime.php?letter=U&show=200', 'https://myanimelist.net/anime.php?letter=U&show=250', 'https://myanimelist.net/anime.php?letter=U&show=300', 'https://myanimelist.net/anime.php?letter=U&show=350', 'https://myanimelist.net/anime.php?letter=U&show=400']}
+2024-08-16 11:04:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=V>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=V&show=0', 'https://myanimelist.net/anime.php?letter=V&show=50', 'https://myanimelist.net/anime.php?letter=V&show=100']}
+2024-08-16 11:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=X> (referer: None)
+2024-08-16 11:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=Y> (referer: None)
+2024-08-16 11:04:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=W>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=W&show=0', 'https://myanimelist.net/anime.php?letter=W&show=50', 'https://myanimelist.net/anime.php?letter=W&show=100', 'https://myanimelist.net/anime.php?letter=W&show=150', 'https://myanimelist.net/anime.php?letter=W&show=200', 'https://myanimelist.net/anime.php?letter=W&show=250', 'https://myanimelist.net/anime.php?letter=W&show=300', 'https://myanimelist.net/anime.php?letter=W&show=350', 'https://myanimelist.net/anime.php?letter=W&show=400', 'https://myanimelist.net/anime.php?letter=W&show=450', 'https://myanimelist.net/anime.php?letter=W&show=500', 'https://myanimelist.net/anime.php?letter=W&show=550', 'https://myanimelist.net/anime.php?letter=W&show=600']}
+2024-08-16 11:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://myanimelist.net/anime.php?letter=Z> (referer: None)
+2024-08-16 11:04:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=X>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=X&show=0', 'https://myanimelist.net/anime.php?letter=X&show=50', 'https://myanimelist.net/anime.php?letter=X&show=100', 'https://myanimelist.net/anime.php?letter=X&show=150', 'https://myanimelist.net/anime.php?letter=X&show=200', 'https://myanimelist.net/anime.php?letter=X&show=250', 'https://myanimelist.net/anime.php?letter=X&show=300', 'https://myanimelist.net/anime.php?letter=X&show=350', 'https://myanimelist.net/anime.php?letter=X&show=400', 'https://myanimelist.net/anime.php?letter=X&show=450', 'https://myanimelist.net/anime.php?letter=X&show=500', 'https://myanimelist.net/anime.php?letter=X&show=550', 'https://myanimelist.net/anime.php?letter=X&show=600']}
+2024-08-16 11:04:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=Y>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=Y&show=0', 'https://myanimelist.net/anime.php?letter=Y&show=50', 'https://myanimelist.net/anime.php?letter=Y&show=100', 'https://myanimelist.net/anime.php?letter=Y&show=150', 'https://myanimelist.net/anime.php?letter=Y&show=200', 'https://myanimelist.net/anime.php?letter=Y&show=250', 'https://myanimelist.net/anime.php?letter=Y&show=300', 'https://myanimelist.net/anime.php?letter=Y&show=350', 'https://myanimelist.net/anime.php?letter=Y&show=400', 'https://myanimelist.net/anime.php?letter=Y&show=450', 'https://myanimelist.net/anime.php?letter=Y&show=500', 'https://myanimelist.net/anime.php?letter=Y&show=550', 'https://myanimelist.net/anime.php?letter=Y&show=600', 'https://myanimelist.net/anime.php?letter=Y&show=650', 'https://myanimelist.net/anime.php?letter=Y&show=700', 'https://myanimelist.net/anime.php?letter=Y&show=750', 'https://myanimelist.net/anime.php?letter=Y&show=800', 'https://myanimelist.net/anime.php?letter=Y&show=850', 'https://myanimelist.net/anime.php?letter=Y&show=900']}
+2024-08-16 11:04:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://myanimelist.net/anime.php?letter=Z>
+{'page_urls': ['https://myanimelist.net/anime.php?letter=Z&show=0', 'https://myanimelist.net/anime.php?letter=Z&show=50', 'https://myanimelist.net/anime.php?letter=Z&show=100', 'https://myanimelist.net/anime.php?letter=Z&show=150', 'https://myanimelist.net/anime.php?letter=Z&show=200', 'https://myanimelist.net/anime.php?letter=Z&show=250', 'https://myanimelist.net/anime.php?letter=Z&show=300', 'https://myanimelist.net/anime.php?letter=Z&show=350']}
+2024-08-16 11:04:58 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-08-16 11:04:58 [scrapy.extensions.feedexport] INFO: Stored json feed (27 items) in: data/pages_urls.json
+2024-08-16 11:04:58 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 10031,
+ 'downloader/request_count': 27,
+ 'downloader/request_method_count/GET': 27,
+ 'downloader/response_bytes': 7434475,
+ 'downloader/response_count': 27,
+ 'downloader/response_status_count/200': 27,
+ 'elapsed_time_seconds': 2.522928,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 8, 16, 5, 34, 58, 524593, tzinfo=datetime.timezone.utc),
+ 'item_scraped_count': 27,
+ 'log_count/DEBUG': 55,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 2,
+ 'response_received_count': 27,
+ 'scheduler/dequeued': 27,
+ 'scheduler/dequeued/memory': 27,
+ 'scheduler/enqueued': 27,
+ 'scheduler/enqueued/memory': 27,
+ 'start_time': datetime.datetime(2024, 8, 16, 5, 34, 56, 1665, tzinfo=datetime.timezone.utc)}
+2024-08-16 11:04:58 [scrapy.core.engine] INFO: Spider closed (finished)
